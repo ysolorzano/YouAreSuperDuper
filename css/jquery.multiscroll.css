@@ -6,21 +6,24 @@
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
 html, body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 	overflow:hidden;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+
 .ms-section {
     position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 .ms-section.ms-table{
     display: table;
     width: 100%;
 }
+
 .ms-tableCell {
     display: table-cell;
     vertical-align: middle;
@@ -28,12 +31,14 @@ html, body {
     height: 100%;
     padding: 0 10%;
 }
+
 .ms-easing {
     -webkit-transition: all 0.7s ease-out;
     -moz-transition: all 0.7s ease-out;
     -o-transition: all 0.7s ease-out;
     transition: all 0.7s ease-out;
 }
+
 #multiscroll-nav {
     position: fixed;
     z-index: 100;
@@ -41,16 +46,20 @@ html, body {
     top: 50%;
     opacity: 1;
 }
+
 #multiscroll-nav.right {
     right: 17px;
 }
+
 #multiscroll-nav.left {
     left: 17px;
 }
+
 #multiscroll-nav ul{
   margin: 0;
   padding: 0;
 }
+
 #multiscroll-nav li{
     display: block;
     width: 14px;
@@ -58,6 +67,7 @@ html, body {
     margin: 7px;
     position:relative;
 }
+
 #multiscroll-nav li a{
     display: block;
     position: relative;
@@ -67,9 +77,11 @@ html, body {
     cursor: pointer;
     text-decoration: none;
 }
+
 #multiscroll-nav li .active span{
     background: #fff;
 }
+
 #multiscroll-nav span{
     top: 2px;
     left: 2px;
@@ -83,6 +95,7 @@ html, body {
     position: absolute;
     z-index: 1;
 }
+
 .multiscroll-tooltip {
     position: absolute;
     color: #fff;
@@ -92,9 +105,11 @@ html, body {
     white-space: nowrap;
     max-width: 220px;
 }
+
 .multiscroll-tooltip.right {
     right: 20px;
 }
+
 .multiscroll-tooltip.left {
     left: 20px;
 }

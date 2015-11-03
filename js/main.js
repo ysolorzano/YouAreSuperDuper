@@ -8,7 +8,6 @@ $(document).ready(function() {
     paddingBottom: '70px',
     afterLoad: function(anchorLink, index){
       if(index === 1){
-        console.log('index 1') // debug
         $('#header_img').removeClass('resize');
       } else {
         $('#header_img').addClass('resize');

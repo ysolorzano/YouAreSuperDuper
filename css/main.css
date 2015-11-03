@@ -55,6 +55,7 @@ Gloabl CSS
 body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #000;
+  float: left;
 }
 
 h1 {
@@ -87,8 +88,13 @@ h4 {
 h5 {
   font-size: 1.2em;
   color: #000;
-  font-weight: 400;
-  text-align: center;
+  font-weight: 200;
+}
+
+h6 {
+  font-size: .8em;
+  color: #000;
+  font-weight: 600;
 }
 
 p {
@@ -101,7 +107,7 @@ iframe {
 
 .ms-section {
 			text-align: center;
-		}
+}
 
 
 
@@ -179,10 +185,12 @@ iframe {
 
 #header img {
   max-width: 300px;
+
 }
 
- .smaller #header img {
-  max-width: 150px;
+.resize {
+  height: 150px !important;
+  transition: all 0.5s ease-in 1s;
 }
 
 #footer{
@@ -206,7 +214,6 @@ forms CSS
 
 #form-main {
  width: 100%;
- float: left;
  padding-top: 0px;
 }
 
@@ -218,7 +225,6 @@ forms CSS
  padding-bottom: 50px;
  width: 350px;
  margin: 15%;
- float: left;
  position: absolute;
  -moz-border-radius: 7px;
  -webkit-border-radius: 7px;
@@ -424,12 +430,6 @@ arrows
 }
 
 #left2 img, #right2 img {
-  width: 40%;
-  margin: 2%;
+  width: 49%;
   border-radius: 5%;
-}
-
-.resize {
-  height: 100px !important;
-  width: 100px !important;
 }
