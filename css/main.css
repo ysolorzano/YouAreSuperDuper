@@ -6,7 +6,6 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 a {
@@ -54,9 +53,8 @@ abbr, acronym {
 Gloabl CSS
 ********************************/
 body {
-	font-family: arial,helvetica;
-	color: #333;
-	color: rgba(0,0,0,0.5);
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #000;
 }
 
 h1 {
@@ -77,6 +75,19 @@ h3 {
   line-height: 1.5;
   font-weight: 400;
   color: #000;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5em;
+  color: #ec4030;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.2em;
+  color: #000;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -207,7 +218,6 @@ forms CSS
  padding-bottom: 50px;
  width: 350px;
  float: left;
- left: 50%;
  position: absolute;
  -moz-border-radius: 7px;
  -webkit-border-radius: 7px;
@@ -412,15 +422,8 @@ arrows
   /* Safari & Chrome */
 }
 
-#left2 h2, #right2 h2 {
-  font-size: 1.5em;
-}
-
-#left2 h3, #right2 h3 {
-  font-size: 1.2em;
-}
-
 #left2 img, #right2 img {
-  width: 49%;
+  width: 40%;
+  margin: 2%;
   border-radius: 5%;
 }
