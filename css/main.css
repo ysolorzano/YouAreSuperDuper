@@ -1,0 +1,264 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#000;
+}
+
+h2 {
+  font-size: 3em;
+  color: #ec4030;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #000;
+}
+
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body {
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.ms-section{
+			text-align: center;
+		}
+
+#menu li {
+	display:inline-block;
+  text-transform: uppercase;
+	margin: 15px 10px;
+	color: #fff;
+  font-weight: 600;
+	-webkit-border-radius: 20px;
+			border-radius: 20px;
+}
+
+#menu li.active{
+	color: #000;
+  font-weight: 600;
+  background-color: #6599cd;
+
+
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+  font-size: 1em;
+}
+#menu a:hover{
+	color: #6599cd;
+}
+
+#menu li a,
+#menu li.active a{
+	padding: 5px 15px;
+	display:block;
+}
+#menu li.active a{
+	color: #000;
+}
+#menu{
+	position:fixed;
+	top:0;
+	right: 0;
+  text-align: right;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0 2.5%;
+	margin:0;
+}
+#infoMenu{
+	height: 20px;
+	color: #f2f2f2;
+	position:fixed;
+	z-index:70;
+	bottom:0;
+	width:100%;
+	text-align:right;
+	font-size:0.9em;
+	padding:8px 0 8px 0;
+}
+#infoMenu ul{
+	padding: 0 40px;
+}
+#infoMenu li a{
+	display: block;
+	margin: 0 22px 0 0;
+	color: #333;
+}
+#infoMenu li a:hover{
+	text-decoration:underline;
+}
+#infoMenu li{
+	display:inline-block;
+	position:relative;
+}
+#examplesList{
+	display:none;
+	background: #282828;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 20px;
+	float: left;
+	position: absolute;
+	bottom: 29px;
+	right: 0;
+	width:638px;
+	text-align:left;
+}
+#examplesList ul{
+	padding:0;
+}
+#examplesList ul li{
+	display:block;
+	margin: 5px 0;
+}
+#examplesList ul li a{
+	color: #BDBDBD;
+	margin:0;
+}
+#examplesList ul li a:hover{
+	color: #f2f2f2;
+}
+#examplesList .column{
+	float: left;
+	margin: 0 20px 0 0;
+}
+#examplesList h3{
+	color: #f2f2f2;
+	font-size: 1.2em;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	padding: 0 0 5px 0;
+}
+
+/* Demos Menu
+ * --------------------------------------- */
+ #demosMenu{
+	position:fixed;
+	bottom: 10px;
+	right:10px;
+	z-index: 999;
+}
+
+
+h1{
+  color: #000;
+}
+
+/* Fixed header and footer.
+* --------------------------------------- */
+#header, #footer{
+  position:fixed;
+  height: 40px;
+  display:block;
+  width: 100%;
+  background: #4868b1;
+  z-index:9;
+  text-align:center;
+  color: #fff;
+  padding: 20px 0 0 0;
+}
+
+#header{
+  top:0px;
+}
+
+#header img {
+  max-width: 300px;
+}
+
+#footer{
+  bottom:0px;
+}
+
+button {
+   border-top: 1px solid #ec4030;
+   background: #ec4030;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ec4030), to(#ec4030));
+   background: -webkit-linear-gradient(top, #ec4030, #ec4030);
+   background: -moz-linear-gradient(top, #ec4030, #ec4030);
+   background: -ms-linear-gradient(top, #ec4030, #ec4030);
+   background: -o-linear-gradient(top, #ec4030, #ec4030);
+   padding: 9px 30px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 20px;
+   font-family: 'Open Sans Condensed', sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+button:hover {
+   border-top-color: #93241a;
+   background: #93241a;
+   color: #ccc;
+   }
+button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
