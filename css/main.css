@@ -428,3 +428,8 @@ arrows
   width: 49%;
   border-radius: 5%;
 }
+
+.resize {
+  height: 100px !important;
+  width: 100px !important;
+}
