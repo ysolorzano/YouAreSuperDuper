@@ -1,44 +1,70 @@
 @CHARSET "ISO-8859-1";
-/* Reset CSS
- * --------------------------------------- */
+/********************************
+Reset CSS
+********************************/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans Condensed', sans-serif;
 }
-a{
-	text-decoration:none;
+
+a {
+  text-decoration:none;
 }
+
 table {
-    border-spacing: 0;
+  border-spacing: 0;
 }
-fieldset,img {
-    border: 0;
+
+fieldset, img {
+  border: 0;
 }
+
 address,caption,cite,code,dfn,em,strong,th,var {
-    font-weight: normal;
-    font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
-strong{
+
+strong {
 	font-weight: bold;
 }
-ol,ul {
-    list-style: none;
-    margin:0;
-    padding:0;
-}
-caption,th {
-    text-align: left;
 
+ol, ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+caption,th {
+  text-align: left;
+}
+
+q:before, q:after {
+    content:'';
+}
+
+abbr, acronym {
+  border: 0;
+}
+
+
+
+/********************************
+Gloabl CSS
+********************************/
+body {
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
 }
 
 h1 {
-    font-weight: normal;
-    font-size: 100%;
-    margin:0;
-    padding:0;
-    color:#000;
+  font-weight: normal;
+  font-size: 6em;
+  margin: 0;
+  padding: 0;
+  color: #000;
 }
 
 h2 {
@@ -47,40 +73,45 @@ h2 {
 }
 
 h3 {
-  font-size: 1.7em;
-  line-height: 1.4;
+  font-size: 1.75em;
+  line-height: 1.5;
   font-weight: 400;
   color: #000;
 }
 
-q:before,q:after {
-    content:'';
-}
-abbr,acronym { border: 0;
-}
-
-
-/* Custom CSS
- * --------------------------------------- */
-body {
-	font-family: arial,helvetica;
-	color: #333;
-	color: rgba(0,0,0,0.5);
-}
-h1{
-	font-size: 6em;
-}
-p{
+p {
 	font-size: 2em;
 }
-.ms-section{
+
+iframe {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.ms-section {
 			text-align: center;
 		}
+
+
+
+/********************************
+#menu
+********************************/
+#menu {
+	position:fixed;
+	top:0;
+	right: 0;
+  text-align: right;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0 2.5%;
+	margin:0;
+}
 
 #menu li {
 	display:inline-block;
   text-transform: uppercase;
-	margin: 15px 10px;
+	margin: 15px 5px;
 	color: #fff;
   font-weight: 600;
 	-webkit-border-radius: 20px;
@@ -92,122 +123,33 @@ p{
   font-weight: 600;
   background-color: #6599cd;
 
-
 }
 #menu li a{
 	text-decoration:none;
 	color: #000;
-  font-size: 1em;
+  font-size: .8em;
 }
 #menu a:hover{
 	color: #6599cd;
 }
 
-#menu li a,
-#menu li.active a{
+#menu li a {
 	padding: 5px 15px;
 	display:block;
 }
+
 #menu li.active a{
 	color: #000;
-}
-#menu{
-	position:fixed;
-	top:0;
-	right: 0;
-  text-align: right;
-	height: 40px;
-	z-index: 70;
-	width: 100%;
-	padding: 0 2.5%;
-	margin:0;
-}
-#infoMenu{
-	height: 20px;
-	color: #f2f2f2;
-	position:fixed;
-	z-index:70;
-	bottom:0;
-	width:100%;
-	text-align:right;
-	font-size:0.9em;
-	padding:8px 0 8px 0;
-}
-#infoMenu ul{
-	padding: 0 40px;
-}
-#infoMenu li a{
-	display: block;
-	margin: 0 22px 0 0;
-	color: #333;
-}
-#infoMenu li a:hover{
-	text-decoration:underline;
-}
-#infoMenu li{
-	display:inline-block;
-	position:relative;
-}
-#examplesList{
-	display:none;
-	background: #282828;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	padding: 20px;
-	float: left;
-	position: absolute;
-	bottom: 29px;
-	right: 0;
-	width:638px;
-	text-align:left;
-}
-#examplesList ul{
-	padding:0;
-}
-#examplesList ul li{
-	display:block;
-	margin: 5px 0;
-}
-#examplesList ul li a{
-	color: #BDBDBD;
-	margin:0;
-}
-#examplesList ul li a:hover{
-	color: #f2f2f2;
-}
-#examplesList .column{
-	float: left;
-	margin: 0 20px 0 0;
-}
-#examplesList h3{
-	color: #f2f2f2;
-	font-size: 1.2em;
-	margin: 0 0 15px 0;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-	padding: 0 0 5px 0;
-}
-
-/* Demos Menu
- * --------------------------------------- */
- #demosMenu{
-	position:fixed;
-	bottom: 10px;
-	right:10px;
-	z-index: 999;
+  padding: 5px 15px;
+  display:block;
 }
 
 
-h1{
-  color: #000;
-}
 
-/* Fixed header and footer.
-* --------------------------------------- */
-#header, #footer{
+/********************************
+#header, #footer
+********************************/
+#header, #footer {
   position:fixed;
   height: 40px;
   display:block;
@@ -227,7 +169,7 @@ h1{
   max-width: 300px;
 }
 
-.smaller #header img {
+ .smaller #header img {
   max-width: 150px;
 }
 
@@ -235,211 +177,177 @@ h1{
   bottom:0px;
 }
 
-button {
-   border-top: 1px solid #ec4030;
-   background: #ec4030;
-   background: -webkit-gradient(linear, left top, left bottom, from(#ec4030), to(#ec4030));
-   background: -webkit-linear-gradient(top, #ec4030, #ec4030);
-   background: -moz-linear-gradient(top, #ec4030, #ec4030);
-   background: -ms-linear-gradient(top, #ec4030, #ec4030);
-   background: -o-linear-gradient(top, #ec4030, #ec4030);
-   padding: 9px 30px;
-   -webkit-border-radius: 10px;
-   -moz-border-radius: 10px;
-   border-radius: 10px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 20px;
-   font-family: 'Open Sans Condensed', sans-serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
-button:hover {
-   border-top-color: #93241a;
-   background: #93241a;
-   color: #ccc;
-   }
-button:active {
-   border-top-color: #1b435e;
-   background: #1b435e;
-   }
+
+
+/********************************
+forms CSS
+********************************/
+.info {
+ font-size: .9em;
+ color: #fff;
+}
+
+#form1 {
+  margin: 0;
+}
+
+#feedback-page {
+ text-align: center;
+}
+
+#form-main {
+ width: 100%;
+ float: left;
+ padding-top: 0px;
+}
+
+#form-div {
+ background-color: #1b435e;
+ padding-left: 35px;
+ padding-right: 35px;
+ padding-top: 35px;
+ padding-bottom: 50px;
+ width: 350px;
+ float: left;
+ left: 50%;
+ position: absolute;
+ margin-top: -250px;
+ margin-left: -150px;
+ -moz-border-radius: 7px;
+ -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+ color: #3c3c3c;
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-weight: 500;
+ font-size: 18px;
+ border-radius: 0;
+ line-height: 22px;
+ background-color: #fbfbfb;
+ padding: 13px 13px 13px 54px;
+ margin-bottom: 10px;
+ width: 100%;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -ms-box-sizing: border-box;
+ box-sizing: border-box;
+ border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.feedback-input:focus {
+ background: #fff;
+ box-shadow: 0;
+ border: 3px solid #3498db;
+ color: #3498db;
+ outline: none;
+ padding: 13px 13px 13px 54px;
+}
+
+.focused {
+ color: #30aed6;
+ border: #30aed6 solid 3px;
+}
+
+/* Icons */
+#name {
+ background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+ background-size: 30px 30px;
+ background-position: 11px 8px;
+ background-repeat: no-repeat;
+}
+
+#name:focus {
+ background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+ background-size: 30px 30px;
+ background-position: 8px 5px;
+ background-position: 11px 8px;
+ background-repeat: no-repeat;
+}
+
+#email {
+ background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+ background-size: 30px 30px;
+ background-position: 11px 8px;
+ background-repeat: no-repeat;
+}
+
+#email:focus {
+ background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+ background-size: 30px 30px;
+ background-position: 11px 8px;
+ background-repeat: no-repeat;
+}
+
+#comment {
+ background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+ background-size: 30px 30px;
+ background-position: 11px 8px;
+ background-repeat: no-repeat;
+}
+
+textarea {
+ width: 100%;
+ height: 120px;
+ line-height: 150%;
+ resize: vertical;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+ background-color: white;
+}
+
+#button-blue {
+ font-family: 'Open Sans Condensed' sans-serif;
+ float: left;
+ width: 100%;
+ border: #fbfbfb solid 4px;
+ cursor: pointer;
+ background-color: #3498db;
+ color: white;
+ font-size: 24px;
+ padding-top: 22px;
+ padding-bottom: 22px;
+ -webkit-transition: all 0.3s;
+ -moz-transition: all 0.3s;
+ transition: all 0.3s;
+ margin-top: -4px;
+ font-weight: 700;
+}
+
+#button-blue:hover {
+ background-color: rgba(0, 0, 0, 0);
+ color: #0493bd;
+}
+
+.submit:hover {
+ color: #3498db;
+}
+
+.ease {
+ width: 0px;
+ height: 74px;
+ background-color: #fbfbfb;
+ -webkit-transition: .3s ease;
+ -moz-transition: .3s ease;
+ -o-transition: .3s ease;
+ -ms-transition: .3s ease;
+ transition: .3s ease;
+}
+
+.submit:hover .ease {
+ width: 100%;
+ background-color: white;
+}
 
 
 
-
-
-   .info {
-     font-size: .9em;
-     color: #fff;
-   }
-
-   #feedback-page {
-     text-align: center;
-   }
-
-   #form-main {
-     width: 100%;
-     float: left;
-     padding-top: 0px;
-   }
-
-   #form-div {
-     background-color: #1b435e;
-     padding-left: 35px;
-     padding-right: 35px;
-     padding-top: 35px;
-     padding-bottom: 50px;
-     width: 350px;
-     float: left;
-     left: 50%;
-     position: absolute;
-     margin-top: -250px;
-     margin-left: -150px;
-     -moz-border-radius: 7px;
-     -webkit-border-radius: 7px;
-   }
-
-   .feedback-input {
-     color: #3c3c3c;
-     font-family: 'Open Sans Condensed', sans-serif;
-     font-weight: 500;
-     font-size: 18px;
-     border-radius: 0;
-     line-height: 22px;
-     background-color: #fbfbfb;
-     padding: 13px 13px 13px 54px;
-     margin-bottom: 10px;
-     width: 100%;
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     -ms-box-sizing: border-box;
-     box-sizing: border-box;
-     border: 3px solid rgba(0, 0, 0, 0);
-   }
-
-   .feedback-input:focus {
-     background: #fff;
-     box-shadow: 0;
-     border: 3px solid #3498db;
-     color: #3498db;
-     outline: none;
-     padding: 13px 13px 13px 54px;
-   }
-
-   .focused {
-     color: #30aed6;
-     border: #30aed6 solid 3px;
-   }
-   /* Icons ---------------------------------- */
-
-   #name {
-     background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-     background-size: 30px 30px;
-     background-position: 11px 8px;
-     background-repeat: no-repeat;
-   }
-
-   #name:focus {
-     background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-     background-size: 30px 30px;
-     background-position: 8px 5px;
-     background-position: 11px 8px;
-     background-repeat: no-repeat;
-   }
-
-   #email {
-     background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-     background-size: 30px 30px;
-     background-position: 11px 8px;
-     background-repeat: no-repeat;
-   }
-
-   #email:focus {
-     background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-     background-size: 30px 30px;
-     background-position: 11px 8px;
-     background-repeat: no-repeat;
-   }
-
-   #comment {
-     background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-     background-size: 30px 30px;
-     background-position: 11px 8px;
-     background-repeat: no-repeat;
-   }
-
-   textarea {
-     width: 100%;
-     height: 120px;
-     line-height: 150%;
-     resize: vertical;
-   }
-
-   input:hover,
-   textarea:hover,
-   input:focus,
-   textarea:focus {
-     background-color: white;
-   }
-
-   #button-blue {
-     font-family: 'Open Sans Condensed' sans-serif;
-     float: left;
-     width: 100%;
-     border: #fbfbfb solid 4px;
-     cursor: pointer;
-     background-color: #3498db;
-     color: white;
-     font-size: 24px;
-     padding-top: 22px;
-     padding-bottom: 22px;
-     -webkit-transition: all 0.3s;
-     -moz-transition: all 0.3s;
-     transition: all 0.3s;
-     margin-top: -4px;
-     font-weight: 700;
-   }
-
-   #button-blue:hover {
-     background-color: rgba(0, 0, 0, 0);
-     color: #0493bd;
-   }
-
-   .submit:hover {
-     color: #3498db;
-   }
-
-   .ease {
-     width: 0px;
-     height: 74px;
-     background-color: #fbfbfb;
-     -webkit-transition: .3s ease;
-     -moz-transition: .3s ease;
-     -o-transition: .3s ease;
-     -ms-transition: .3s ease;
-     transition: .3s ease;
-   }
-
-   .submit:hover .ease {
-     width: 100%;
-     background-color: white;
-   }
-
-   @media only screen and (max-width: 580px) {
-     #form-div {
-       left: 3%;
-       margin-right: 3%;
-       width: 88%;
-       margin-left: 0;
-       padding-left: 3%;
-       padding-right: 3%;
-     }
-   }
-
-/*arrows*/
+/********************************
+arrows
+********************************/
 .arrows {
   width: 60px;
   height: 72px;
@@ -499,13 +407,13 @@ button:active {
 .arrows path.a2 {
   animation-delay: -0.5s;
   -webkit-animation-delay: -0.5s;
-  /* Safari 和 Chrome */
+  /* Safari & Chrome */
 }
 
 .arrows path.a3 {
   animation-delay: 0s;
   -webkit-animation-delay: 0s;
-  /* Safari 和 Chrome */
+  /* Safari & Chrome */
 }
 
 #left2 h2, #right2 h2 {
