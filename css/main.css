@@ -69,6 +69,7 @@ h1 {
 h2 {
   font-size: 3em;
   color: #ec4030;
+  text-align: center;
 }
 
 h3 {
@@ -95,6 +96,11 @@ h6 {
   font-size: .8em;
   color: #000;
   font-weight: 600;
+  text-indent: 15px;
+}
+
+.commit {
+  font-size: 1em;
 }
 
 p {
@@ -105,10 +111,13 @@ iframe {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+object {
+  margin: 10%;
+}
+
 .ms-section {
 			text-align: center;
 }
-
 
 
 /********************************
@@ -197,6 +206,32 @@ iframe {
   bottom:0px;
 }
 
+.donatebtn {
+  padding: 2px;
+}
+
+
+
+/********************************
+inspiration page
+********************************/
+.inspo-photo {
+  width: 50%;
+  margin: 2.5%;
+  border-radius: 10%;
+}
+
+
+
+/********************************
+mission page
+********************************/
+.mission-photo {
+  width: 45%;
+  margin: 2.5%;
+  border-radius: 10%;
+}
+
 
 
 /********************************
@@ -224,7 +259,7 @@ forms CSS
  padding-top: 35px;
  padding-bottom: 50px;
  width: 350px;
- margin: 15%;
+ margin: 15% 20%;
  position: absolute;
  -moz-border-radius: 7px;
  -webkit-border-radius: 7px;

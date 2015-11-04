@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('#myContainer').multiscroll({
-    sectionsColor: ['#fff', '#FFF', '#fff', '#fff', '#fff'],
+    sectionsColor: ['#93afcb', '#dbe8f5', '#93afcb', '#dbe8f5', '#93afcb'],
     anchors: ['first', 'second', 'third', 'fourth', 'fifth'],
     menu: '#menu',
     css3: true,
@@ -14,4 +14,5 @@ $(document).ready(function() {
       }
     }
   });
+
 });
